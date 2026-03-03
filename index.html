@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Formation Premium Investir en Bourse</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<div class="container">
+
+<div class="sidebar">
+  <button onclick="showSection('home',0)">Accueil</button>
+  <button onclick="showSection('chap1',20)">Chapitre 1</button>
+  <button onclick="showSection('chap2',40)">Chapitre 2</button>
+  <button onclick="showSection('chap3',60)">Chapitre 3</button>
+  <button onclick="showSection('quiz',80)">Quiz Final</button>
+</div>
+
+<div class="content">
+
+<div class="progress-bar">
+  <div class="progress" id="progress"></div>
+</div>
+
+<!-- Accueil -->
+<div id="home" class="section active">
+  <div class="home">
+    <div class="home-content">
+      <h2>Bienvenue à la Formation Investir en Bourse !</h2>
+      <p>Découvrez comment investir intelligemment, comprendre les ETF, gérer les risques et développer une stratégie gagnante sur le long terme. Que vous soyez débutant ou que vous vouliez renforcer vos connaissances, cette formation est faite pour vous.</p>
+      <button class="btn-start" onclick="showSection('chap1',20)">Commencer la formation</button>
+    </div>
+  </div>
+</div>
+
+<!-- Chapitres -->
+<div id="chap1" class="section">
+<h2>Chapitre 1 : Comprendre la Bourse</h2>
+<img src="images/graphique1.jpg" alt="Graphique boursier">
+<p>Le chapitre explique la bourse comme un marché où se rencontrent acheteurs et vendeurs...</p>
+<!-- texte narratif détaillé ici -->
+</div>
+
+<div id="chap2" class="section">
+<h2>Chapitre 2 : Les ETF et stratégie long terme</h2>
+<img src="images/graphique2.jpg" alt="Graphique croissance">
+<p>Les ETF permettent d’investir sur un ensemble d’actions en une seule transaction...</p>
+<!-- texte narratif détaillé ici -->
+</div>
+
+<div id="chap3" class="section">
+<h2>Chapitre 3 : Gestion du risque et psychologie</h2>
+<img src="images/graphique3.jpg" alt="Analyse graphique">
+<p>Investir comporte toujours des risques, mais savoir les gérer est la clé du succès...</p>
+<!-- texte narratif détaillé ici -->
+</div>
+
+<!-- Quiz -->
+<div id="quiz" class="section quiz">
+<h2>Quiz Final</h2>
+<div id="quizContainer">
+<p>1️⃣ Un ETF permet-il de diversifier ?</p>
+<button onclick="checkAnswer(true,0)">Oui</button>
+<button onclick="checkAnswer(false,0)">Non</button>
+<p id="feedback0"></p>
+<!-- ajouter les autres questions -->
+<p id="result"></p>
+<div id="certificateContainer"></div>
+</div>
+</div>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
